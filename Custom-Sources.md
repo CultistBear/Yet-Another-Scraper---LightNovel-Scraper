@@ -52,7 +52,7 @@ Also import __NovelLinks__, __NovelTitles__, __ChapterLinks__ in your script fro
     </dd>
 </dl>
 
-It is also highly recommended to have a good look at both [main](../master/main.py) and the [ReadLightNovelorg](../master/ReadLightNovelorg.py) python files to get a good idea on how everything works.
+It is also highly recommended to have a good look at both [main](../main/main.py) and the [ReadLightNovelorg](../main/ReadLightNovelorg.py) python files to get a good idea on how everything works.
 
 Lastly, New Sources are always welcome, feel free to share your custom sources with the community if you wish to do so.
   
