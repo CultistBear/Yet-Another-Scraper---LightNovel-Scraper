@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import cloudscraper
 import os
-import errno
 from __main__ import NovelLinks,NovelTitles,ChapterLinks
 
 os.system("color")
