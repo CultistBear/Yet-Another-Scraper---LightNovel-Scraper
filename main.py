@@ -89,7 +89,7 @@ def ChoosingLightNovelIndex():
             print("\n"*3)
             SeriesListing()
 
-#Function for choosing the chapter range to download
+#Function for choosing the Starting index of the chapter range to download
 def StartingChaptersIndex():
     try:
         print("\033[0;32m\nTotal Chapters: \033[0;37m",len(ChapterLinks))
@@ -107,7 +107,7 @@ def StartingChaptersIndex():
             time.sleep(2)
             print("\n"*3)
             StartingChaptersIndex()
-
+#Function for choosing the Ending index of the chapter range to download
 def EndingChaptersIndex(ChapterStartingIndex):
     try:
         ChapterEndingIndex=int(input("\033[0;32mEnter Ending index of chapter(s) to download (%s - %s): \033[0;37m" %(ChapterStartingIndex,len(ChapterLinks))))
