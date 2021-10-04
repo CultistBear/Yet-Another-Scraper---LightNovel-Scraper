@@ -13,15 +13,15 @@ def Search(Series_Name):
       "x-requested-with": "XMLHttpRequest",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4549.3 Safari/537.36",
       "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "origin": "https://www.readlightnovel.org",
-      "referer": "https://www.readlightnovel.org/",
+      "origin": "https://www.readlightnovel.me",
+      "referer": "https://www.readlightnovel.me/",
   }
 
   data = {
     "q": Series_Name
   }
 
-  response=Scraper.post("https://www.readlightnovel.org/search/autocomplete", headers=headers, data=data)
+  response=Scraper.post("https://www.readlightnovel.me/search/autocomplete", headers=headers, data=data)
   Soup=BeautifulSoup(response.content, "html.parser").find_all("li")
   for i in Soup:
     NovelLinks.append(i.a["href"])
