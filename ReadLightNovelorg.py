@@ -41,7 +41,7 @@ def Download(ToDownloadChapterLink,FinalPath):
     response=Scraper.get(ToDownloadChapterLink)
     Soup=BeautifulSoup(response.content,"html.parser")
     for i in Soup.find("div",class_="hidden",id="chapterhidden").find_all("p"):
-      ChapterContent.append(i.text.strip().replace("\n", "")+"\n\n")
+      ChapterContent.append(i.text.strip().replace("\n", "")+"\n")
     ChapterTitle=str(Soup.find("div",class_="block-title").a.string+Soup.find("div",class_="block-title").a.next_sibling)
     CompleteName = os.path.join(FinalPath,ChapterTitle+".txt" )
     f=open(CompleteName, "w+", encoding="utf-8")
