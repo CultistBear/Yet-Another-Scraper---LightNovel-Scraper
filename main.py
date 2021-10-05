@@ -39,7 +39,7 @@ def SourceChoosing():
         for i in Sources:
             print("[",Sources.index(i)+1,"]",i,"\n")
         global Choice
-        Choice=int(input("\033[0;32mChoose a source for downloading Light Novel:\033[0;37m "))
+        Choice=int(input("\033[0;32mChoose a source for downloading Light Novel: \033[0;37m"))
     except:
         print("\033[0;31mInvalid Input. Try Again.\033[0;37m")
         time.sleep(2)
@@ -190,7 +190,7 @@ def DownloadingFunction(Beginning,Ending,Location):
 #Function Starts the Program
 def Start():
     global LightNovelName
-    LightNovelName=input("\033[0;32mEnter The Name of Light Novel you wish to download:\033[0;37m")
+    LightNovelName=input("\033[0;32mEnter The Name of Light Novel you wish to download: \033[0;37m")
     print()
     SourceChoosing()
 
